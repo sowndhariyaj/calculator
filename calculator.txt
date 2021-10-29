@@ -11,11 +11,20 @@ void main()
 	for(;;)
 	{
 		printf("\n\n\n\nEnter the your option:\n");
-		printf("1-Division.\n2-Exit.\n");
+		printf("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Exit.\n");
 		scanf("%d",&opt);
 		switch(opt)
 		{
-			case 1: 
+			case 1:
+			printf("\nAddition of  %d and %d is: %d",num1,num2,num1+num2);
+			break;
+			case 2:
+			printf("\nSubstraction of %d  and %d is:  %d",num1,num2,num1-num2);
+			break;
+			case 3:
+			printf("\nMultiplication of %d  and %d is:  %d",num1,num2,num1*num2);
+			break;  
+			case 4: 
 			if(num2==0)
 			{
 				printf("OOps Devide by zero\n");
@@ -25,8 +34,7 @@ void main()
 				printf("\n Division of %d  and %d is:  %d",num1,num2,num1/num2);
 			}  
 			break;
-			case 2:
-			return 0;
+			case 5: return 0;
 			break; 
 			default:
 			printf("\n Enter correct option\n");
